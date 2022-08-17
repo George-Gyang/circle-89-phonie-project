@@ -1,0 +1,280 @@
+/* body{
+    background-image: url("https://www.wallpaperflare.com/static/166/61/76/gradient-green-blue-hd-wallpaper-preview.jpg");
+background-size: cover;
+    padding: 15%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.photo-div{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 0px 3px 3px rgb(131, 167, 131);
+    border-radius: 6px;
+}
+.photo{
+    width:100%;
+    height: 100px;
+}
+.container{
+    background-color: rgb(217, 226, 240);
+    width: 300px;
+    margin: auto;
+    border: 1px solid hsl(210deg 18% 87%);
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    box-shadow:  5px 4px 4px rgb(131, 167, 131);
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+}
+
+h1{
+  text-align: center;
+  color: rgb(21, 90, 19);
+  font-weight: 3em;
+  font-size: 20px;
+}
+
+label{
+margin-left: 5%;
+}
+
+input{
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: 5px auto;
+    border: 1.5px solid #cfded4;
+    border-radius: 6px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+input:focus{
+    outline: 2px ridge hsl(137deg 57% 41%);
+}
+input::placeholder{
+    color: black;
+    font-style: italic;
+
+}
+
+button{
+    display: block;
+    background-color: hsl(137deg 57% 41%);
+    color: white;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 6px;
+    height: 30px;
+}
+button:hover{
+    background-color: black;
+    color: d0d7de;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+}
+
+h4{
+    text-align: center;
+    color: red;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Customizing scrollbar */
+body::-webkit-scrollbar {
+ width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+ background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+ background-color: #000;
+ border-radius: 20px;
+ border: 3px solid #ddd;
+}
+
+.altschool-signup *:not(i) {
+ font-family: "Raleway", sans-serif;
+}
+
+.bg-image-wrapper {
+ height: 100vh;
+ width: 100%;
+ position: relative;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ opacity: 0;
+ transition: all 0.9s ease;
+}
+
+.overlay {
+ position: absolute;
+ background-color: rgba(0, 0, 0, 0.5);
+ height: 100%;
+ width: 100%;
+ z-index: 2;
+}
+
+.altschool-signup {
+ height: 100vh;
+ width: 100%;
+ color: #fff;
+ position: relative;
+}
+
+.altschool-signup .signup-card {
+ width: 460px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ padding: 40px 20px;
+ border-radius: 8px;
+ background-color: #fff;
+ box-shadow: 0px 4px 24px rgba(49, 28, 8, 0.08);
+ color: #2c2c2c;
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+
+.altschool-signup .logo-container {
+ display: flex;
+ justify-content: center;
+}
+
+.altschool-signup .signup-title {
+ text-align: center;
+ font-weight: 600;
+ color: #2c2c2c;
+ font-size: 18px;
+}
+
+.altschool-signup .signup-card form {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.altschool-signup input {
+ padding: 0 10px;
+ height: 50px;
+ outline: none;
+ border: 1px solid #eee;
+ border-radius: 8px;
+ display: block;
+ width: 100%;
+}
+
+.altschool-signup input:focus {
+ border: 1px solid #90ecc2;
+}
+
+.altschool-signup .btn {
+ width: 100%;
+ padding: 12px;
+ text-align: center;
+ padding: 15px;
+ outline: none;
+ border: none;
+ border-radius: 8px;
+ background-color: #90ecc2;
+ color: #fff;
+ transition: background-color 0.5s ease;
+ font-size: 18px;
+ font-weight: bold;
+ cursor: pointer;
+}
+
+.altschool-signup .btn:hover {
+ background-color: #071c59;
+}
+
+.altschool-signup .custom-input {
+ border: 1px solid #eee;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0;
+ border-radius: 8px;
+ outline: none;
+}
+
+.altschool-signup .custom-input input {
+ border: 0;
+ width: 96%;
+ padding: 10px 1px;
+ margin-left: 10px;
+}
+
+.altschool-signup .custom-input .img-container {
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ margin-right: 2px;
+ height: 40px;
+ width: 40px;
+ border-radius: 8px;
+}
+
+.altschool-signup .custom-input .img-container img {
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ left: -40px;
+ opacity: 0;
+ transition: all 0.7s ease;
+}
+.altschool-signup .custom-input .img-container img.active {
+ left: 0;
+ opacity: 1;
+}
+
+.altschool-signup #networkDisplay {
+ gap: 6px;
+ overflow-x: scroll;
+ display: none;
+ opacity: 0;
+ transition: opacity 1s ease;
+}
+
+.altschool-signup #networkDisplay.active {
+ display: flex;
+ opacity: 1;
+}
+
+.altschool-signup #networkDisplay div {
+ border-radius: 8px;
+ padding: 10px;
+ color: #fff;
+ background-color: #90ecc2;
+ margin-bottom: 5px;
+ cursor: pointer;
+}
+
+@media screen and (max-width: 760px) {
+ .altschool-signup .signup-card {
+  width: 90%;
+ }
+}
